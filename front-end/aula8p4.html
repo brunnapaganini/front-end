@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extras e Desafios</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body, html {
+        width: 100%;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 231, 146);
+            width: 250px;
+            height: 350px;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .nome {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .descrição {
+            font-size: 14px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .botões {
+            display: flex;
+            gap: 8px;
+        }
+
+        .botões a {
+            text-decoration: none; 
+            color: #000;
+        }
+
+        .botões a:hover {
+        text-decoration: underline;
+        }
+
+        .button {
+            padding: 8px 16px;
+            background-color: rgb(61, 242, 255);
+            color: #000;
+            border: none;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar">
+            <img src="https://i.pinimg.com/736x/02/fe/f8/02fef8a56473574f3a9a910fc36983d5.jpg"
+            width="49"
+            alt="Foto minha"/>
+        </div>
+        <div class="nome"> Aelin Ashryver</div>
+        <div class="descrição"> Sou quem quer que os donos do meu destino ordenam.</div>
+        <div class="botões">
+            <button class="button"><a href="@p4ganini">Seguir</a></button>
+            <button class="button"><a href="tel:+5551112233445">Mensagem<a></button>
+        </div>
+    </div>
+</body>
+</html>
