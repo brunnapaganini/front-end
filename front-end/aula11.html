@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="texto">Algum Texto</h2>
+    <button id="botao">Clique em mim!</button>
+    
+    <button id="clique">Clique Quantas Vezes Quiser!</button>
+    <p id="cliques">Número de Cliques:</p> 
+
+    <form id="meuFormulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        <p></p>
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+        <p></p>
+        <label for="mensagem">Mensagem:</label>
+        <input type="text" id="mensagem" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        alert('Bem-Vindo a página!');
+        let botao = document.getElementById('botao');
+        let texto = document.getElementById('texto');
+        let cliques = document.getElementById('cliques');
+        botao.addEventListener('click', function() {
+            texto.innerHTML = 'Texto Alterado Com Sucesso!';
+            document.body.style.backgroundColor = 'green';
+        })
+        let contador = 0;
+
+        const botoes = document.getElementById("clique");
+        const contagem = document.getElementById("cliques")
+        botoes.addEventListener('click', function() {
+            contador++;
+            contagem.textContent = "Número de Cliques:" + contador
+        })
+
+        let formulario = document.getElementById('meuFormulario');
+        
+        formulario.addEventListener('submit', function(event) {
+            alert('Formulário enviado com sucesso!');
+        });
+    </script>
+</body>
+</html>
+
